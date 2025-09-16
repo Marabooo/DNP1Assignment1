@@ -21,6 +21,7 @@ namespace CLI.UI.ManageUsers
                 Console.WriteLine("=== Manage Users ===");
                 Console.WriteLine("1) Create user");
                 Console.WriteLine("2) List users");
+                Console.WriteLine("3) Delete user");
                 Console.WriteLine("0) Back");
                 Console.Write("Choose: ");
                 string? choice = Console.ReadLine();
@@ -34,6 +35,10 @@ namespace CLI.UI.ManageUsers
                     case "2":
                         ListUsersView listUsersView = new ListUsersView(userRepository);
                         await listUsersView.RunAsync();
+                        break;
+                    case "3":
+                        DeleteUserView deleteUserView = new DeleteUserView(userRepository);
+                        await deleteUserView.RunAsync();
                         break;
                     case "0":
                         back = true;
