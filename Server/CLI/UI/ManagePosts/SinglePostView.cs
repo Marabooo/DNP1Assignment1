@@ -18,7 +18,7 @@ namespace CLI.UI.ManagePosts
 
         public async Task RunAsync()
         {
-            Console.WriteLine("--- View Post ---");
+            Console.WriteLine("~~~ View Post ~~~");
             Console.Write("Post Id: ");
             int postId = ReadInt();
 
@@ -35,7 +35,7 @@ namespace CLI.UI.ManagePosts
 
             Console.WriteLine("Title: " + post.Title);
             Console.WriteLine("Body: " + post.Body);
-            Console.WriteLine("--- Comments ---");
+            Console.WriteLine("~~~ Comments ~~~");
             bool any = false;
 
             foreach (Comment c in commentRepository.GetManyAsync())

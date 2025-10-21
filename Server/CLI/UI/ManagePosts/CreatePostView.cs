@@ -18,7 +18,7 @@ namespace CLI.UI.ManagePosts
 
         public async Task RunAsync()
         {
-            Console.WriteLine("--- Create Post ---");
+            Console.WriteLine("~~~ Create Post ~~~");
             Console.Write("Title: ");
             string title = ReadNonEmpty();
             Console.Write("Body: ");

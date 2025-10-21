@@ -16,7 +16,7 @@ namespace CLI.UI.ManagePosts
 
         public async Task RunAsync()
         {
-            Console.WriteLine("--- Posts Overview ---");
+            Console.WriteLine("~~~ Posts Overview ~~~");
             foreach (Post p in postRepository.GetManyAsync())
             {
                 Console.WriteLine("[" + p.Id + "] " + p.Title);
