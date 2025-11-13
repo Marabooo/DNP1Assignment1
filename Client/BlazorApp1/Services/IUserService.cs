@@ -4,6 +4,8 @@ namespace BlazorApp1.Services;
 
 public interface IUserService
 {
-    public Task<UserDto> AddUserAsync(CreateUserDto request);
-    public Task UpdateUserAsync(int id, UpdateUserDTO request);
+    Task<UserDto> AddUserAsync(CreateUserDto request);
+    Task UpdateUserAsync(int id, UpdateUserDTO request);
+    
+    //more methods
 }
