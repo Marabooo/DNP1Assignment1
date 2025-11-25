@@ -15,7 +15,7 @@ public class SimpleAuthProvider : AuthenticationStateProvider
     {
         throw new NotImplementedException();
     }
-    
+    //
     
     public SimpleAuthProvider(HttpClient httpClient)
     {
